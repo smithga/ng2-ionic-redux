@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="center">
+      <img src="assets/images/cwx-logo-transparent-large.png" />
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="login-image">
+  <form [formGroup]="loginGroup" (ngSubmit)="login()">
+    <ion-list>
+      <br/>
+      <br/>
+      <ion-item block>
+        <ion-label stacked>Username</ion-label>
+        <ion-input type="text" formControlName="username"></ion-input>
+      </ion-item>
+
+      <ion-item block>
+        <ion-label stacked>Password</ion-label>
+        <ion-input type="password" formControlName="password"></ion-input>
+      </ion-item>
+
+      <ion-item block1 class="center">
+        <ion-label stacked>
+          <button ion-button color="primary" block type="submit" [disabled]="!loginGroup.valid">Sign In</button>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+  </form>
+</ion-content>
