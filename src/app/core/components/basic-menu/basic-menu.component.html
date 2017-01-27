@@ -1,0 +1,9 @@
+<div class="cwx-menu">
+    <ion-card *ngFor="let item of items" block>
+        <button ion-item (click)="navigate(item)" class="tw-menu-button" icon-left>
+    <ion-icon [name]="item.icon" [ngStyle]="{'color': item.color}" item-left></ion-icon>
+    <h1>{{ item.title }}</h1>
+    <p class="item item-text-wrap">{{item.description}}</p>
+  </button>
+    </ion-card>
+</div>

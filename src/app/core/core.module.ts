@@ -6,6 +6,8 @@ import { ConfigService } from './shared/config.service';
 import { StoreBase } from './shared/store-base';
 // Pages
 import { HomePage } from './pages/home/home';
+// Components
+import { BasicMenuComponent } from './components/basic-menu/basic-menu.component';
 
 @NgModule({
     imports: [
@@ -13,7 +15,11 @@ import { HomePage } from './pages/home/home';
         IonicModule
     ],
     declarations: [
-        HomePage
+        HomePage,
+        BasicMenuComponent
+    ],
+    exports: [
+        BasicMenuComponent
     ],
     providers: [
         ConfigService,

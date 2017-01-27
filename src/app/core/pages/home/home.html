@@ -1,15 +1,28 @@
 <ion-header>
+    <ion-toolbar>
+        <ion-title class="center">
+            <img src="assets/images/cwx-logo-white-large.png" /> <!--  width="100" height="16" -->
+        </ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<!--<ion-header>
   <ion-navbar>
     <ion-title>
       Ionic Blank
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header>-->
 
 <ion-content padding>
-  The world is your oyster.
+  <br/>
+  <br/>
+  <tw-basic-menu [items]="items" (onNavigate)="navigate($event)"></tw-basic-menu>
+  
+  <!--The world is your oyster.
   <p>
     If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
   </p>
-  <br/>
+  <br/>-->
+
 </ion-content>
