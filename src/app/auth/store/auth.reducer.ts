@@ -1,4 +1,4 @@
-// import { createSelector } from 'reselect';
+import { Response } from '@angular/http';
 
 import { LoginUserInfo } from '../shared/login-user-info';
 import { AuthActions } from './auth.actions';
@@ -11,6 +11,7 @@ export interface AuthState {
     username: string;
     processingMessage: string;
     processing: boolean;
+    lastResponse: Response;
     fullname: string;
 };
 
@@ -22,6 +23,7 @@ const initialState: AuthState = {
     username: '',
     processingMessage: null,
     processing: false,
+    lastResponse: null,
     fullname: null
 };
 
@@ -73,7 +75,8 @@ export function authReducer(state, action): AuthState {
             newState = Object.assign({}, state,
                 {
                     authenticated: false,
-                    processingMessage: action.payload,
+                    processingMessage: action.payload.statusText || 'Unable to connect to server!',
+                    lastResponse: action.payload,
                     processing: false
                 });
             break;

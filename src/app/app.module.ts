@@ -10,7 +10,6 @@ import { AuthModule } from './auth/auth.module';
 import { MyApp } from './app.component';
 import { AppReducer } from './app-store';
 // Pages
-// import { HomePage } from '../pages/home/home';
 
 @NgModule({
   declarations: [

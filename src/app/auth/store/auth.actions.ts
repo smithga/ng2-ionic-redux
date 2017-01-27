@@ -28,7 +28,7 @@ export class AuthActions {
     loginError(response: Response): Action {
         return {
             type: AuthActions.LOGIN_ERROR,
-            payload: response.statusText
+            payload: response
         };
     }
 

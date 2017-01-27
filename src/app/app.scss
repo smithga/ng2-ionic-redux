@@ -28,3 +28,24 @@
     width: 75%;
     height: 75%;
 }
+.footer-bar {
+    height: 30px;
+}
+ion-header > ion-toolbar > div.toolbar-background {
+    background-color: black !important;
+    // border-bottom: 1px solid gray;
+}
+ion-header > ion-navbar > div.toolbar-background {
+    background-color: black !important;
+    // border-bottom: 1px solid gray;
+}
+ion-header {
+    border-bottom: 1px solid gray;
+}
+ion-footer {
+    background-color: black !important;
+    border-top: 1px solid gray;
+}
+ion-footer > cwx-footer > ion-toolbar > div.toolbar-background {
+    background-color: black !important;
+}
