@@ -11,6 +11,7 @@
 let typeCache: { [label: string]: boolean } = {};
 export function type<T>(label: T | ''): T {
     if (typeCache[<string>label]) {
+        console.dir(typeCache);
         throw new Error(`Action type "${label}" is not unique"`);
     }
 

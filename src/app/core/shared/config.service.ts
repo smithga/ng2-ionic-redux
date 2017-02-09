@@ -17,7 +17,8 @@ export class ConfigService {
     // TODO: Refactor into base class or http helper
     // Helper Methods
     public url(path: string): string {
-        return `${this.apiUrl}/${path}`;
+        // return `${this.apiUrl}/${path}`;
+        return `http://localhost:3000/${path}`;
     }
 
     public get headers(): Headers {

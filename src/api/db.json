@@ -1,0 +1,97 @@
+{
+    "securitytokens": [
+        {
+            "id": "cwxadmin",
+            "token": "token",
+            "user": {
+                "objectId": "20-2",
+                "name": "Coreworx Administrator",
+                "username": "cwxadmin",
+                "email": "admin@company.com"
+            }
+        },
+        {
+            "id": "user1",
+            "token": "token",
+            "user": {
+                "objectId": "20-3",
+                "name": "Test User One",
+                "username": "user1",
+                "email": "test1@company.com"
+            }
+        }
+    ],
+    "projects": [
+        {
+            "id": "1",
+            "name": "NGL Project"
+        }
+    ],
+    "packages": [
+        {
+            "id": "1",
+            "projectId": "1",
+            "parent": "",
+            "name": "NGL Pipeline"
+        }
+    ],
+    "personnel": [
+        {
+            "id": "10",
+            "user": {
+                "objectId": "20-10",
+                "name": "Chris Adams",
+                "username": "cadams",
+                "email": "cadams@company.com",
+                "discipline": "Welder",
+                "level": "level 2"
+            }
+        },
+        {
+            "id": "11",
+            "user": {
+                "objectId": "20-11",
+                "name": "Sam Brown",
+                "username": "cbrown",
+                "email": "cbrown@company.com",
+                "discipline": "Welder",
+                "level": "Apprentice"
+            }
+        },
+        {
+            "id": "12",
+            "user": {
+                "objectId": "20-12",
+                "name": "Douglas Omar",
+                "username": "domar",
+                "email": "domar@company.com",
+                "discipline": "Welder",
+                "level": "Journeyman"
+            }
+        }
+    ],
+    "equipment": [
+        {
+            "id": "322-R0068",
+            "name": "Lincoln 300 Welder"
+        },
+        {
+            "id": "322-R0073",
+            "name": "Miller BB300 Welder"
+        },
+        {
+            "id": "322-R0074",
+            "name": "Lincoln 300 Welder"
+        }
+    ],
+    "lineItems": [
+        {
+            "id": 1,
+            "packageId": 1,
+            "WBS": "12.1.8.4",
+            "ActivityId": "A1000",
+            "name": "Item 1",
+            "status": "submitted"
+        }
+    ]
+}

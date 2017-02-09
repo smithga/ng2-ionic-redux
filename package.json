@@ -1,7 +1,7 @@
 {
-  "name": "ionic-hello-world",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "coreworx-mobile",
+  "author": "Coreworx",
+  "homepage": "http://coreworx.com/",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -33,6 +33,7 @@
     "zone.js": "0.6.26"
   },
   "devDependencies": {
+    "json-server": "^0.9.4",
     "@ionic/app-scripts": "1.0.0",
     "typescript": "2.0.9"
   },
@@ -45,5 +46,5 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [],
-  "description": "cwx-mobile: An Ionic project"
+  "description": "cwx-mobile: A mobile application"
 }

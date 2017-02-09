@@ -41,11 +41,11 @@ function saveState(state: AuthState): AuthState {
     return state;
 }
 
-export function authReducer(state, action): AuthState {
+export function authReducer(state = getInitialState(), action): AuthState {
     let newState: AuthState;
-    if (!state) {
-        state = getInitialState();
-    }
+    // if (!state) {
+    //     state = getInitialState();
+    // }
     switch (action.type) {
 
         // LOGIN

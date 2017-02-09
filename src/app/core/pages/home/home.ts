@@ -12,7 +12,7 @@ import { Page2Page } from '../page2/page2';
 })
 export class HomePage {
   private items = [];
-  private authenticated$;
+  // private authenticated$;
 
   constructor(
     public navCtrl: NavController,

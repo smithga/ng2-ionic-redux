@@ -10,7 +10,7 @@ import { AppState } from '../../../app-store';
 })
 export class Page2Page {
   private items = [];
-  private authenticated$;
+  // private authenticated$;
 
   constructor(
     public navCtrl: NavController,
