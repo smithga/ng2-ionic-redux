@@ -11,4 +11,6 @@ The app currently uses json-server to simulate a web api and the structure lives
 
 > json-server --watch src\api\db.json
 
+NOTE: when running in chrome open the developer tools and use the device toolbar to simulate a mobile device for the best experience.
+
 Enjoy!
