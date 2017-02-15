@@ -6,6 +6,7 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 // Modules
 import { CoreModule } from './core/core.module';
 import { AuthModule } from './auth/auth.module';
+import { ProjectsModule } from './projects/projects.module';
 // Other
 import { MyApp } from './app.component';
 import { AppReducer } from './app-store';
@@ -20,7 +21,8 @@ import { AppReducer } from './app-store';
     StoreModule.provideStore(AppReducer),
     StoreDevtoolsModule.instrumentOnlyWithExtension(),
     CoreModule,
-    AuthModule
+    AuthModule,
+    ProjectsModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

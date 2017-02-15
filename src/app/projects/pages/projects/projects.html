@@ -4,11 +4,16 @@
             <img src="assets/images/cwx-logo-white-large.png" /> <!--  width="100" height="16" -->
         </ion-title>
     </ion-toolbar>
+    <ion-navbar>
+      <ion-title class="center-navbar">
+        Projects
+      </ion-title>
+    </ion-navbar>
 </ion-header>
 
 <ion-content padding>
   <br/>
   <br/>
-  <cwx-basic-menu [items]="items" (onNavigate)="navigate($event)"></cwx-basic-menu>
+  <cwx-basic-menu [items]="($items | async)" (onNavigate)="navigate($event)"></cwx-basic-menu>
 
 </ion-content>

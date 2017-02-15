@@ -7,6 +7,8 @@ Then to run the app:
 > npm install
 > ionic serve
 
-The app will try to communicate with a web api end point specified in src/core/shared/config.service.ts
+The app currently uses json-server to simulate a web api and the structure lives in api\db.json.  To launch json-server:
+
+> json-server --watch src\api\db.json
 
 Enjoy!

@@ -4,7 +4,7 @@ import { NavController, Platform } from 'ionic-angular';
 import { Store } from '@ngrx/store';
 import { AppState } from '../../../app-store';
 // Pages
-import { Page2Page } from '../page2/page2';
+import { ProjectsPage } from '../../../projects/pages/projects/projects';
 
 @Component({
   selector: 'page-home',
@@ -12,7 +12,6 @@ import { Page2Page } from '../page2/page2';
 })
 export class HomePage {
   private items = [];
-  // private authenticated$;
 
   constructor(
     public navCtrl: NavController,
@@ -22,10 +21,10 @@ export class HomePage {
 
     this.items = [
       {
-        'id': 'PAGE2',
-        'title': 'Page 2',
+        'id': 'PROJECTS',
+        'title': 'Projects',
         'icon': 'musical-note',
-        'description': 'Menu item 1 description'
+        'description': 'List all my projects'
       },
       {
         'id': 'EXIT',
@@ -38,8 +37,8 @@ export class HomePage {
 
   navigate(item) {
     switch (item.id) {
-      case 'PAGE2':
-        this.navCtrl.push(Page2Page)
+      case 'PROJECTS':
+        this.navCtrl.push(ProjectsPage)
         break;
       case 'EXIT':
         this.platform.exitApp();

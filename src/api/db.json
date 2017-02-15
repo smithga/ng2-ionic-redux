@@ -23,14 +23,18 @@
     ],
     "projects": [
         {
-            "id": "1",
+            "id": "1020-1234",
             "name": "NGL Project"
+        },
+        {
+            "id": "1020-5678",
+            "name": "KT Lan Project"
         }
     ],
     "packages": [
         {
-            "id": "1",
-            "projectId": "1",
+            "id": "88-789C",
+            "projectId": "1020-1234",
             "parent": "",
             "name": "NGL Pipeline"
         }
@@ -86,8 +90,8 @@
     ],
     "lineItems": [
         {
-            "id": 1,
-            "packageId": 1,
+            "id": "1",
+            "packageId": "88-789C",
             "WBS": "12.1.8.4",
             "ActivityId": "A1000",
             "name": "Item 1",
