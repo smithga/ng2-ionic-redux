@@ -19,9 +19,9 @@ export class AuthService {
 
     public login(loginInfo: ILoginInfo): Observable<LoginResult> {
         let params: URLSearchParams = new URLSearchParams();
-        // params.set('username', loginInfo.username);
-        // params.set('password', loginInfo.password);
-        // params.set('consumer_key', this.configService.consumerKey);
+        params.set('username', loginInfo.username);
+        params.set('password', loginInfo.password);
+        params.set('consumer_key', this.configService.consumerKey);
 
         let headers: Headers = new Headers();
         headers.append('Accept', 'application/json');
