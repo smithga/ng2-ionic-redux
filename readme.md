@@ -23,7 +23,7 @@ Reference: https://forum.ionicframework.com/t/ionic-toturial-for-building-a-rele
 
 
 
-It's easiest to open to command prompts in VSCode: one for ionic serve and the other for json-server.
+It's easiest to open two command prompts in VSCode: one for ionic serve and the other for json-server.
 
 NOTE: when running in chrome open the developer tools and use the device toolbar to simulate a mobile device for the best experience:
     > F12
