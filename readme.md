@@ -7,6 +7,12 @@ Then to run the app:
 > npm install
 > ionic serve
 
+The app currently uses json-server to simulate a web api and the structure lives in api\db.json.  To launch json-server:
+
+> json-server --watch src\api\db.json
+
+
+
 To build the app for Android:
 > ionic build android --release
 
@@ -16,9 +22,6 @@ To build for iOS (on a mac):
 Reference: https://forum.ionicframework.com/t/ionic-toturial-for-building-a-release-apk/15758
 
 
-The app currently uses json-server to simulate a web api and the structure lives in api\db.json.  To launch json-server:
-
-> json-server --watch src\api\db.json
 
 It's easiest to open to command prompts in VSCode: one for ionic serve and the other for json-server.
 
