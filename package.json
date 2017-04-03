@@ -1,7 +1,7 @@
 {
-  "name": "coreworx-mobile",
-  "author": "Coreworx",
-  "homepage": "http://coreworx.com/",
+  "name": "ng2-mobile",
+  "author": "Gary Smith",
+  "homepage": "http",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -46,5 +46,5 @@
     "ionic-plugin-keyboard"
   ],
   "cordovaPlatforms": [],
-  "description": "cwx-mobile: A mobile application"
+  "description": "ng2-mobile: A mobile application"
 }

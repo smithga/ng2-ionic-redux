@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
-    selector: 'cwx-basic-menu',
+    selector: 'custom-basic-menu',
     templateUrl: 'basic-menu.component.html'
 })
 export class BasicMenuComponent implements OnInit {

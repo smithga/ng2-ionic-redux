@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-    selector: 'cwx-footer',
+    selector: 'custom-footer',
     templateUrl: 'footer.component.html'
 })
 export class FooterComponent implements OnInit {

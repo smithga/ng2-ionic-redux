@@ -1,12 +1,12 @@
 {
     "securitytokens": [
         {
-            "id": "cwxadmin",
+            "id": "admin",
             "token": "token",
             "user": {
                 "objectId": "20-2",
-                "name": "Coreworx Administrator",
-                "username": "cwxadmin",
+                "name": "Administrator",
+                "username": "admin",
                 "email": "admin@company.com"
             }
         },
@@ -23,79 +23,16 @@
     ],
     "projects": [
         {
-            "id": "1020-1234",
-            "name": "NGL Project"
+            "id":"1",
+            "title": "Project 1",
+            "icon": "star",
+            "description": "Project 1 description"
         },
         {
-            "id": "1020-5678",
-            "name": "KT Lan Project"
-        }
-    ],
-    "packages": [
-        {
-            "id": "88-789C",
-            "projectId": "1020-1234",
-            "parent": "",
-            "name": "NGL Pipeline"
-        }
-    ],
-    "personnel": [
-        {
-            "id": "10",
-            "user": {
-                "objectId": "20-10",
-                "name": "Chris Adams",
-                "username": "cadams",
-                "email": "cadams@company.com",
-                "discipline": "Welder",
-                "level": "level 2"
-            }
-        },
-        {
-            "id": "11",
-            "user": {
-                "objectId": "20-11",
-                "name": "Sam Brown",
-                "username": "cbrown",
-                "email": "cbrown@company.com",
-                "discipline": "Welder",
-                "level": "Apprentice"
-            }
-        },
-        {
-            "id": "12",
-            "user": {
-                "objectId": "20-12",
-                "name": "Douglas Omar",
-                "username": "domar",
-                "email": "domar@company.com",
-                "discipline": "Welder",
-                "level": "Journeyman"
-            }
-        }
-    ],
-    "equipment": [
-        {
-            "id": "322-R0068",
-            "name": "Lincoln 300 Welder"
-        },
-        {
-            "id": "322-R0073",
-            "name": "Miller BB300 Welder"
-        },
-        {
-            "id": "322-R0074",
-            "name": "Lincoln 300 Welder"
-        }
-    ],
-    "lineItems": [
-        {
-            "id": "1",
-            "packageId": "88-789C",
-            "WBS": "12.1.8.4",
-            "ActivityId": "A1000",
-            "name": "Item 1",
-            "status": "submitted"
+            "id":"2",
+            "title": "Some other project",
+            "icon": "camera",
+            "description": "Another project description"
         }
     ]
 }

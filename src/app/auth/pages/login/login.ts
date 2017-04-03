@@ -39,8 +39,8 @@ export class LoginPage implements OnDestroy {
     private authStore: AuthStore
   ) {
     this.loginGroup = this.formBuilder.group({
-      username: ['cwxadmin', Validators.required],
-      password: ['cwxadmin', Validators.required]
+      username: ['admin', Validators.required],
+      password: ['admin', Validators.required]
     });
 
     this.processing$ = this.authStore.store.select(this.authStore.selectors.getProcessing).skip(1).subscribe(processing => {

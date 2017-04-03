@@ -1,7 +1,7 @@
 <ion-header>
     <ion-toolbar>
         <ion-title class="center">
-            <img src="assets/images/cwx-logo-white-large.png" /> <!--  width="100" height="16" -->
+            <img src="assets/images/logo.png" class="smaller-logo" />
         </ion-title>
     </ion-toolbar>
     <ion-navbar>
@@ -14,6 +14,6 @@
 <ion-content padding>
   <br/>
   <br/>
-  <cwx-basic-menu [items]="($items | async)" (onNavigate)="navigate($event)"></cwx-basic-menu>
+  <custom-basic-menu [items]="($items | async)" (onNavigate)="navigate($event)"></custom-basic-menu>
 
 </ion-content>

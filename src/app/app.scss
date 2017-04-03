@@ -50,6 +50,10 @@ ion-footer {
     background-color: black !important;
     border-top: 1px solid gray;
 }
-ion-footer > cwx-footer > ion-toolbar > div.toolbar-background {
+ion-footer > custom-footer > ion-toolbar > div.toolbar-background {
     background-color: black !important;
+}
+.smaller-logo {
+    height: 60%;
+    width: 60%;
 }

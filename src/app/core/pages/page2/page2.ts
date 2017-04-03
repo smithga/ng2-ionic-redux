@@ -16,17 +16,7 @@ export class Page2Page {
     public navCtrl: NavController,
     private store: Store<AppState>,
     private platform: Platform
-  ) {
-
-    this.items = [
-      {
-        'id': 'MENU1',
-        'title': 'Menu Item 1',
-        'icon': 'musical-note',
-        'description': 'Menu item 1 description'
-      }
-    ];
-  }
+  ) {  }
 
   navigate(item) {
     switch (item.id) {

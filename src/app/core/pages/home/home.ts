@@ -5,6 +5,7 @@ import { Store } from '@ngrx/store';
 import { AppState } from '../../../app-store';
 // Pages
 import { ProjectsPage } from '../../../projects/pages/projects/projects';
+import { Page2Page } from '../page2/page2';
 
 @Component({
   selector: 'page-home',
@@ -27,6 +28,12 @@ export class HomePage {
         'description': 'List all my projects'
       },
       {
+        'id': 'PAGE2',
+        'title': 'Page 2',
+        'icon': 'star',
+        'description': 'Page 2 Description'
+      },
+      {
         'id': 'EXIT',
         'title': 'Exit',
         'icon': 'exit',
@@ -40,6 +47,9 @@ export class HomePage {
       case 'PROJECTS':
         this.navCtrl.push(ProjectsPage)
         break;
+      case 'PAGE2':
+        this.navCtrl.push(Page2Page)
+        break;        
       case 'EXIT':
         this.platform.exitApp();
         break;
