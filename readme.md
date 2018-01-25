@@ -2,16 +2,21 @@ To get started you need to have ionic installed:
 
 > npm install -g ionic
 
+You will also need Python installed.  Install from windows installer.
+
+The app currently uses json-server to simulate a web api and the structure lives in api\db.json.  
+To install json-server:
+
+> npm install -g json-server
+
+To launch json-server:
+
+> json-server --watch src\api\db.json
+
 Then to run the app:
 
 > npm install
 > ionic serve
-
-The app currently uses json-server to simulate a web api and the structure lives in api\db.json.  To launch json-server:
-
-> json-server --watch src\api\db.json
-
-
 
 To build the app for Android:
 > ionic build android --release
