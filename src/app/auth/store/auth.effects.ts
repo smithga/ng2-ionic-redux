@@ -41,7 +41,6 @@ export class AuthEffects {
 
     // Listen on the authenticated property.  If it goes to false redirect to the login page!    
     $authenticated = this.authStore.store.select(this.authStore.selectors.getAuthenticated).skip(1).subscribe(authenticated => {
-        console.log('Logoff Effect!');
         if (!authenticated) {
              this.authService.logoff();
          }

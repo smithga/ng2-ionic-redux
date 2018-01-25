@@ -40,10 +40,8 @@ export class AuthService {
     }
 
     logoff(): Observable<any> {
-        //this.navCtrl.setRoot(LoginPage);
         var navCtrl = this.app.getRootNav();
         navCtrl.setRoot(LoginPage);
-        console.log('Logoff Service');
         return new ReplaySubject(1);
     }
 
