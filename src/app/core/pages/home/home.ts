@@ -7,6 +7,8 @@ import { AppState } from '../../../app-store';
 import { ProjectsPage } from '../../../projects/pages/projects/projects';
 import { Page2Page } from '../page2/page2';
 
+import { AuthActions } from '../../../auth/store/auth.actions';
+
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
@@ -17,7 +19,8 @@ export class HomePage {
   constructor(
     public navCtrl: NavController,
     private store: Store<AppState>,
-    private platform: Platform
+    private platform: Platform,
+    private authActions: AuthActions
   ) {
 
     this.items = [
@@ -34,10 +37,10 @@ export class HomePage {
         'description': 'Page 2 Description'
       },
       {
-        'id': 'EXIT',
-        'title': 'Exit',
+        'id': 'LOGOFF',
+        'title': 'Logoff',
         'icon': 'exit',
-        'description': 'Exit the application.'
+        'description': 'Logoff the application.'
       }
     ];
   }
@@ -50,8 +53,9 @@ export class HomePage {
       case 'PAGE2':
         this.navCtrl.push(Page2Page)
         break;        
-      case 'EXIT':
-        this.platform.exitApp();
+      case 'LOGOFF':
+        this.store.dispatch(this.authActions.logoff());
+        // this.platform.exitApp();
         break;
     }
   }

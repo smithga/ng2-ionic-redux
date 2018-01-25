@@ -5,16 +5,21 @@ import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
+import { App } from 'ionic-angular';
+import { LoginPage } from '../pages/login/login';
+
 import { ConfigService } from '../../core/shared/config.service';
 import { ILoginInfo } from './login-info';
 import { LoginResult } from './login-result';
+import { ReplaySubject } from 'rxjs/ReplaySubject';
 
 @Injectable()
 export class AuthService {
 
     constructor(
         private http: Http,
-        private configService: ConfigService
+        private configService: ConfigService,
+        private app: App
     ) { }
 
     public login(loginInfo: ILoginInfo): Observable<LoginResult> {
@@ -34,8 +39,12 @@ export class AuthService {
             .map(res => res.json() || {});
     }
 
-    logoff() {
-
+    logoff(): Observable<any> {
+        //this.navCtrl.setRoot(LoginPage);
+        var navCtrl = this.app.getRootNav();
+        navCtrl.setRoot(LoginPage);
+        console.log('Logoff Service');
+        return new ReplaySubject(1);
     }
 
 }

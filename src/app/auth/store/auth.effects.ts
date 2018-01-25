@@ -30,11 +30,21 @@ export class AuthEffects {
             .catch(error => of(this.authStore.actions.loginError(error)))
         );
 
-    // Listen on the authenticated property.  If it goes to false redirect to the login page!
-    // $authenticated = this.authStore.store.select(this.authStore.selectors.getAuthenticated).skip(1).subscribe(authenticated => {
-    //     if (!authenticated) {
-    //         this.authService.logoff();
-    //     }
-    // });
+    // @Effect()
+    // logoff$: Observable<Action> = this.actions$
+    //     .ofType(AuthActions.LOGOFF)
+    //     .map(action => action.payload)
+    //     .map(this.authService.logoff());
+        //.map(action => action.payload)
+        //.map(result => this.authService.logoff());
+
+
+    // Listen on the authenticated property.  If it goes to false redirect to the login page!    
+    $authenticated = this.authStore.store.select(this.authStore.selectors.getAuthenticated).skip(1).subscribe(authenticated => {
+        console.log('Logoff Effect!');
+        if (!authenticated) {
+             this.authService.logoff();
+         }
+    });
 
 }
